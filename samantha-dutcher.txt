@@ -1,0 +1,124 @@
+<a href="https://codepen.io/SDutcher1986/pen/PoNooQJ?editors=1100">Link to my CodePen</a>
+
+    1. What is Semantic HTML? 
+    Mark-up that gives your code meaning
+    2. What is HTML used for? 
+    HTML is used to create pages that are displayed on the Web.
+    3. What is an attribute and where do we put it? 
+    An attribute provides additional information about an element (such as width, height, or style info). These go inside the element tag.
+    EX: <img src="www.something.com" alt="yada-yada" width=150px height=200px>
+    4. What is the h1 tag used for?
+    The h1 tag is used for a heading 
+    How many times should I use it on a page?
+    It should only be used once because h1 conveys a meaning ofbeing most important.
+    5. Name two tags that have required attributes.
+    link and img 
+    6. What do we put in the head of our HTML document? 
+    Metadata (or data that is important to the page) and is not displayed on the page
+    7. What is an id? 
+    An id is an attribute that is used to identify the element it is being used with when linking to another document such as CSS or JavaScript
+    8. What elements can I add an id to? 
+    Any element can have an id unless it already has a class
+    9. How many times can I use the same id on a page? 
+    Only once
+    10. What is a class? 
+    A class is used in the same way an id is 
+    11. What elements can I add a class to? 
+    Any element can have a class unless it already has an id
+    12. How many times can I use the same class on a page? 
+    You can use class as many times as needed
+    13. How do I get my link to open in a new tab?
+    _blank
+    14. What is the alt attribute in the image tag used for? 
+    The alt attribute holds a description of the image and the description is read back to the viewer by a screen reader
+    15. How do I reference an id?
+    #idname
+    16. What is the difference between a section and a div?
+    section means the content inside of it is grouped. div doesn't have any meaning other than what is found in its class or other attributes used.
+    17. What is CSS used for? 
+    to style the html document it is linked to.
+    18. How to we select an element? Example - every h2 on the page
+    h2{
+
+    }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one.
+    An id can be used to identify one element while a class can be used to identify multiple elements. 
+    ID EXAMPLE 
+    <h1 id="myHeader">Hello World!</h1>
+    CLASS Example
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+    20. How do we select classes in CSS?
+    .classname{
+
+    }
+    21. How do we select a p element with a single class of “human”?
+    p.human{
+
+    }
+    22. What is a parent child selector? When would this be useful? 
+    A parent>child selector is selects all elements that are a direct child of the parent element
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar{
+
+    }
+    24. What is a pseudo selector?
+    A pseudo selector selects elements that are in a specific state( such as hover element:hover{})
+    25. What do we use the change the spacing between lines?
+    line-height(CSS) or <br>(HTML)
+    26. What do we use to change the spacing between letters?
+    <letter-spacing>(HTML) or 
+    letter-spacing: 0.1em (CSS)
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase;
+    text-transform: lowercase;
+    28. How do I add a 1px border around my div that is dotted and black?
+    border: 1px black dotted;
+    29. How do I select everything on the page? 
+    * the star is a universal selector 
+    30. How do I write a comment in CSS?
+    /*Comment here*/
+    31. How do I find out what file I am in, when I am using the command line? 
+    pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls 
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm You have to be careful because you will not get a warning message and once it's gone it's gone for good.
+    34. Why should I use version control? 
+    It allows you to compare files with other team members and merge changes prior to any code committing. 
+    35. How often should I commit to github?
+    At least every few changes 
+    36. What is the command we would use to push our repo up to github? 
+    git push -u origin filename
+    37. Walk me through Lambda's git flow. 
+        1. Fork the repo to make it yours
+        2. In Git Bash, git clone to make a copy on your computer
+        3. Cd into the clone
+        4. Make a new branch using git checkout -b Name
+        5. Use code . to open the cloned repo in VSCode
+        6. Make changes and use git add . then  git commit -m "Message here" to make changes
+        7. Push the changes to the repo on Github using git push-u origin filename 
+        8. If merging then merge it back to the main branch(the original forked branch)
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    A block element always starts a new line while an inline element does not 
+    2. What happens when an element is positioned absolutely? 
+    It technically doesn't exist in the normal document layout flow. It sits on it's own layer separate from everything else. Basically it won't move with everything else in the document or page.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    flex-grow
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    display-block: <div>, <address>, <aside>
+    display-inline: <span>, <a>, <br>,<button>
+    inline-block: <img>
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    Flexbox is a method of laying out items in rows or columns and either filling space or shrinking items to fit the space.
+    Use % instead of px to make the elements respect the given width.
+-->
